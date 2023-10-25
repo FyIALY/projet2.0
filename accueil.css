@@ -1,0 +1,98 @@
+*{
+    padding: 0; margin: 0;
+    outline: 0; box-sizing: border-box;
+}
+
+:root{
+    --box-shadow : box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --vert1 : #199033;
+    --vert2 : #32A94C;
+    --vert3 : #4CC366;
+
+    --black-light : #999999;
+    --black-dark : #595959;
+
+    --border: solid 1px var(var(--black-dark));
+}
+body {
+    background-color: #086d1f;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #f0eeee;
+}
+.acc_prof {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5px;
+    padding: 15px 15px;
+    max-width: 600px;
+    width: 100%;
+}
+.presence {
+    padding: 25px;
+    display: flex;
+    border: 0.5px rgb(211, 210, 210) solid;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button {
+    margin: 15px 0px;
+    position: relative;
+    background-color: #4cc36654;
+    padding: 12px 87px;
+    font-size: 20px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.liste_presence {
+    align-items: center;
+}
+.nom_prenom{
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 0.5px rgb(211, 210, 210) solid;
+    border-radius: 10px;
+    padding: 0px 15px;
+}
+ .matiere_classe {
+    width: 100%;
+    display: flex;
+}
+.matiere {
+    background-color: var(--vert3);
+    border: 1px black solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.classe {
+    background-color: var(--vert3);
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: 1px black solid;
+    border-radius: 2px;
+}
+@media (max-width:350px) {
+    .presence{
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        padding: 5px 32px;
+    }
+}
